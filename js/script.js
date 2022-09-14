@@ -40,3 +40,15 @@ tahun.change(function(event){
         $('#tanggal option[value="29"]').remove();
     }
 });
+
+// Adding clock
+let hour = Array.from({length:24},(v,k)=>k+1);
+let min = Array.from({length:60},(v,k)=>k+1)
+
+for(i in hour){
+    document.getElementById('jam').innerHTML += '<option value ="'+i+'">'+i+'</option>'
+};
+
+for(j in min){
+    document.getElementById('menit').innerHTML += '<option value ="'+j+'">'+j+'</option>'
+};

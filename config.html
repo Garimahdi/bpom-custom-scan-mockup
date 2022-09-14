@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://garimahdi.github.io/bpom-custom-scan-mockup/css/homeStyling.css">
+    <link rel="stylesheet" href="/css/homeStyling.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,7 +13,7 @@
 </head>
 <body id="body">
     <div class="comp_banner">
-        <img src="https://garimahdi.github.io/bpom-custom-scan-mockup/media/bpom_header.jpg" alt="customised_header"/>
+        <img src="/media/bpom_header.jpg" alt="customised_header"/>
     </div>
     <div class="main_menu">
         <strong>Konfigurasi Scan</strong>
@@ -114,8 +114,14 @@
         </form>
 
         <form class="form_spacing_letter_no">
-            <label for="no_surat" class="letter_no_spacing">Nomor Surat</label>
-            <input type="text" id="no_surat" placeholder="Masukkan nomor surat" class="text_width"/>
+            <label for="jam" class="label_jam">Jam</label>
+            <select id="jam" class="opt_spacing">
+                <option value="zero_h">Pilih jam</option>
+            </select>
+
+            <select id="menit" class="opt_spacing">
+                <option value="zero_m">Pilih menit</option>
+            </select>
         </form>
 
         <div class="div_button">
@@ -128,6 +134,6 @@
     <div class="footer1">
         Copyright &copy; Astragraphia <span id="anno"></span>
     </div>
-    <script src="https://garimahdi.github.io/bpom-custom-scan-mockup/js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
